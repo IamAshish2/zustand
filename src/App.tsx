@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { useBearStore } from './store/BearStore'
+import Board from './pages/tictactoe/Board'
 
 const App: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -23,7 +24,7 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div>
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -52,7 +53,8 @@ const App: React.FC = () => {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
+      <Board />
     </>
   )
 }
